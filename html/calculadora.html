@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" data-bs-theme="light">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora - JavaScript</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container mt-4">
+		<div class="text-end">
+			<button class="btn" id="trocar-tema" onclick="trocarTema()">Trocar tema</button>
+		</div>
+		<div class="card">
+			<div class="card-header text-center">
+				<h1 class="fw-bold fs-1 py-4">Calculadora</h1>
+			</div>
+			<div class="card-body">
+				<form action="" class="row">
+					<div class="col-md-4">
+						<label for="numero1">Número 1:</label>
+						<input type="number" class="form-control" id="numero1" name="numero1"
+							placeholder="Digite um número">
+					</div>
+					<div class="col-md-4">
+						<label for="operacao">Operação:</label>
+						<select class="form-select" id="operacao" name="operacao">
+							<option value="">Selecione uma operação</option>
+							<option value="subtracao">Subtração</option>
+							<option value="adicao">Adição</option>
+							<option value="multiplicacao">Multiplicação</option>
+							<option value="divisao">Divisão</option>
+						</select>
+					</div>
+					<div class="col-md-4">
+						<label for="numero2">Número 2:</label>
+						<input type="number" class="form-control" id="numero2" name="numero2"
+							placeholder="Digite um número">
+					</div>
+				</form>
+				<div class="col-md-12 mt-4">
+					<button onclick="calcular()" class="btn btn-primary">Calcular</button>
+				</div>
+				<hr />
+				<div class="input-group mt-4">
+					<div class="input-group-text">Resultado:</div>
+					<input type="text" class="form-control" id="resultado" disabled readonly />
+				</div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Desenvolvimento Web II
+			</div>
+		</div>
+	</div>
+	<script src="../js/calculadora.js"></script>
+</body>
+
+</html>
